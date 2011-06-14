@@ -1,0 +1,24 @@
+#LispRepl
+
+Supposed to be a lisp repl for android, built with [ruboto](http://ruboto.org/).
+
+#Install
+
+* Install [rvm](http://beginrescueend.com/)
+* Install [jruby](http://www.jruby.org/), preferrably with `rvm install jruby-1.6.2`
+
+#Running
+
+* `use jruby-1.6.2`
+* `rake`
+* `emulator @your_android`
+* `adb install -r bin/LispRepl-debug.apk`
+
+#More info:
+
+* <http://ruboto.org/>
+* [Ruboto tutorial](https://github.com/ruboto/ruboto-core/wiki/Tutorial:-Getting-started-with-Ruboto)
+* [The android emulator](http://developer.android.com/guide/developing/devices/emulator.html)
+* [Building for android](http://developer.android.com/guide/developing/building/building-cmdline.html)
+
+
