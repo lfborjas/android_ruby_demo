@@ -9,7 +9,6 @@ if RUBY_PLATFORM =~ /java/
   ENV['JAVA_HOME'] = '/usr/lib/jvm/java-1.6.0-openjdk/'
   puts "Detected JRuby.  Loading ANT."
   require 'ant'
-  p ant
   ant_loaded = true
 end
 
