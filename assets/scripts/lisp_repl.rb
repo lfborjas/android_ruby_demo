@@ -1,4 +1,6 @@
 require 'ruboto'
+require 'norvig'
+
 
 ruboto_import_widgets :EditText, :TextView, :Button, :LinearLayout
 
@@ -14,6 +16,6 @@ $activity.handle_create do |b|
     end
 
     handle_click do |view|
-        @tv.append "\n #{view.getText}"
+        @tv.append "\n #{(eval! @et.getText.to_s.to_sexp).to_lisp}"
     end
 end
